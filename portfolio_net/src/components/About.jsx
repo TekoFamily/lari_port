@@ -16,6 +16,12 @@ const About = () => {
                         />
                     </div>
 
+
+
+
+
+
+
                     {/* Coluna de Texto */}
                     <div className="about-text">
                         <h2>Sobre mim</h2>
