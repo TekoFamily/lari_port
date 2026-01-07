@@ -10,7 +10,7 @@ const About = () => {
                     <div className="about-img-wrapper">
                         {/* Substitua o src abaixo pela sua foto real */}
                         <img
-                            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                            src="/img/foto_lari.jpg"
                             alt="Portrait"
                             className="about-img"
                         />
