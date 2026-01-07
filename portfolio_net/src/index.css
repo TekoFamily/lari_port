@@ -60,7 +60,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  
+
 }
 
 /* Container principal para centralizar tudo */
@@ -258,26 +258,109 @@ p {
 }
 
 /* =========================================
-   SKILLS SECTION
-   Integrado visualmente
+   SKILLS / EXPERTISE (CAROUSEL)
    ========================================= */
-.skills-list {
+/* =========================================
+   SKILLS / EXPERTISE (CAROUSEL DARK)
+   ========================================= */
+.skills-section {
+  position: relative;
+}
+
+.carousel-wrapper {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
+  align-items: center;
+  gap: 1rem;
 }
 
-.skill-item {
+.carousel-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  opacity: 0.5;
+}
+
+.carousel-view {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  /* Movimento suave */
+}
+
+.carousel-slide {
+  padding: 0 1rem;
+  /* Espaço entre os cards */
+}
+
+/* Card Estilo Dark (Baseado na imagem) */
+.skill-card-dark {
+  background-color: #111;
+  /* Fundo escuro */
+  border: 1px solid #333;
+  /* Borda sutil */
+  padding: 3rem 2.5rem;
+  height: 100%;
+  min-height: 400px;
+  /* Altura generosa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: border-color 0.3s ease;
+}
+
+.skill-card-dark:hover {
+  border-color: #555;
+}
+
+.skill-icon {
+  margin-bottom: 2rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.skill-title-dark {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.skill-desc-dark {
   font-size: 1rem;
-  color: var(--text-secondary);
-  display: inline-block;
+  color: #aaa;
+  /* Cinza claro para texto */
+  line-height: 1.6;
+  max-width: 90%;
 }
 
-.skill-item:not(:last-child)::after {
-  content: "/";
-  margin-left: var(--spacing-sm);
-  color: #ddd;
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .carousel-btn {
+    display: none;
+    /* No mobile, o scroll/swipe natural seria ideal, mas aqui usamos setas ocultas pois terá autoplay */
+  }
+
+  .skill-card-dark {
+    padding: 2rem;
+    min-height: 350px;
+  }
 }
 
 /* =========================================

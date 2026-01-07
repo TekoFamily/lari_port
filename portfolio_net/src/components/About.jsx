@@ -1,5 +1,5 @@
 import React from 'react';
-import Skills from './Skills';
+
 
 const About = () => {
     return (
@@ -28,12 +28,6 @@ const About = () => {
                             buscando sempre o equilíbrio entre funcionalidade e beleza. Quando não estou
                             no computador, estou buscando inspiração na arquitetura e na natureza.
                         </p>
-
-                        {/* Skills integradas logo após o texto */}
-                        <div style={{ marginTop: '2rem' }}>
-                            <h3 style={{ fontSize: '1rem', color: 'var(--text-primary)', marginBottom: '1rem' }}>Expertise</h3>
-                            <Skills />
-                        </div>
                     </div>
                 </div>
             </div>
