@@ -1,0 +1,364 @@
+/* =========================================
+   DESIGN SYSTEM - VARIÁVEIS GLOBAIS
+   Altere aqui as cores e fontes principais
+   ========================================= */
+:root {
+  /* Cores - Monocromático */
+  --bg-color: #000000ff;
+  /* Fundo do site (branco/off-white) */
+  --text-primary: #f9f9f9ff;
+  /* Texto principal (preto quase puro) */
+  --text-secondary: #f4f4f4ff;
+  /* Subtítulos e textos secundários */
+  --border-color: #ffffffff;
+  /* Linhas sutis, se houver */
+
+  /* Tipografia */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2.5rem;
+  /* Títulos de seção */
+  --font-size-hero: 4rem;
+  /* Headline principal */
+
+  /* Espaçamento (Whitespace) */
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  /* Espaço entre seções */
+
+  /* Layout */
+  --max-width: 1200px;
+  /* Largura máxima do conteúdo */
+  --nav-height: 80px;
+  /* Altura do menu fixo */
+}
+
+/* =========================================
+   RESET E BASE
+   Configurações iniciais
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Scroll suave ao clicar nos links */
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+/* Container principal para centralizar tudo */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  width: 100%;
+}
+
+/* Links (sem decoração padrão) */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================================
+   TIPOGRAFIA GERAL
+   ========================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  /* Pesos mais leves para elegância */
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+/* Utilitários */
+.section-padding {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+/* Removes default focus outline for mouse users but keeps it for keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Scrollbar minimalista */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+   ========================================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background: transparent;
+  /* Transparente conforme solicitado */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.logo {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  /* Opcional, para estilo editorial */
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  /* Pequeno e elegante */
+  color: var(--text-secondary);
+  font-weight: 400;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.hero {
+  min-height: 100vh;
+  /* Ocupa a tela toda */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Alinhado à esquerda */
+  padding-top: var(--nav-height);
+}
+
+.hero-headline {
+  font-size: var(--font-size-hero);
+  line-height: 1.1;
+  color: var(--text-primary);
+  max-width: 900px;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.03em;
+}
+
+.hero-sub {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Duas colunas */
+  gap: var(--spacing-lg);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    /* Coluna única no mobile */
+  }
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #f0f0f0;
+  /* Cor de fundo se imagem falhar */
+  min-height: 500px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  /* Opcional: estilo P&B */
+  transition: filter 0.3s ease;
+}
+
+.about-img:hover {
+  filter: grayscale(0%);
+  /* Cor ao passar o mouse */
+}
+
+.about-text h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+/* =========================================
+   SKILLS SECTION
+   Integrado visualmente
+   ========================================= */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.skill-item {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  display: inline-block;
+}
+
+.skill-item:not(:last-child)::after {
+  content: "/";
+  margin-left: var(--spacing-sm);
+  color: #ddd;
+}
+
+/* =========================================
+   WORKS SECTION
+   ========================================= */
+.section-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.work-item {
+  width: 100%;
+}
+
+.work-thumb {
+  width: 100%;
+  height: 70vh;
+  /* Imagem grande */
+  background-color: #f5f5f5;
+  margin-bottom: var(--spacing-sm);
+  overflow: hidden;
+  position: relative;
+}
+
+.work-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.work-thumb:hover img {
+  transform: scale(1.03);
+  /* Zoom suave */
+}
+
+.work-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.work-info h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.work-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+/* =========================================
+   CONTACT & FOOTER
+   ========================================= */
+.contact-section {
+  text-align: left;
+}
+
+.contact-text {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-links {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.footer {
+  padding: var(--spacing-md) 0;
+  text-align: center;
+  /* Minimalista */
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xl);
+}
