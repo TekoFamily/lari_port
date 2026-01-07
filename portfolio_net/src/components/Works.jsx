@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const works = [
@@ -95,11 +96,15 @@ const Works = () => {
                                     style={{ flex: `0 0 ${100 / visibleCards}%` }}
                                 >
                                     <div className="work-item-carousel">
-                                        <div className="work-thumb-carousel">
+                                        <Link to={`/project/${work.id}`} className="work-thumb-carousel">
                                             <img src={work.image} alt={work.title} />
-                                        </div>
+                                        </Link>
                                         <div className="work-info">
-                                            <h3>{work.title}</h3>
+                                            <h3>
+                                                <Link to={`/project/${work.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                                                    {work.title}
+                                                </Link>
+                                            </h3>
                                             <span className="work-desc">{work.category}</span>
                                         </div>
                                     </div>
