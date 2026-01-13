@@ -18,9 +18,9 @@ const projects = [
         description2: `A solução foi estruturada a partir de princípios de UX, priorizando arquitetura da informação clara, fluxos intuitivos e redução de carga cognitiva. O aplicativo permite o registro e categorização de despesas, visualização de entradas e saídas, acompanhamento de metas financeiras e análise do uso do dinheiro ao longo do tempo.
 
 O design das interfaces foi orientado por usabilidade, clareza visual e consistência, garantindo uma experiência acessível e eficiente. O Planno demonstra a aplicação do design como ferramenta estratégica para produtos financeiros, alinhando necessidades do usuário e objetivos do produto.`,
-        images2: ["/Planno/iPhone 16 - Cadastro.png"],
-        images3: ["/Planno/iPhone 16 - Dashboard.png"],
-        resultados: ["/Planno/PLANNO - MOCKUP.jpg"]
+        images2: [],
+        images3: [],
+        resultados: ["/Planno/iPhone 16 - Cadastro.png", "/Planno/iPhone 16 - Dashboard.png", "/Planno/iPhone 16 - Metas.png"]
     },
     {
         id: 2,
