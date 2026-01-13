@@ -56,6 +56,13 @@ O projeto foi desenvolvido de forma colaborativa por uma equipe de quatro design
 
 Na fase de imersão e pesquisa, buscamos compreender profundamente o contexto da empresa, seus objetivos e o comportamento dos usuários. Foram aplicadas análises como a Matriz SWOT, que ajudou a identificar forças, fraquezas, oportunidades e ameaças do produto digital, além da criação de personas representativas do público-alvo. Também utilizamos o Mapa da Empatia para entender necessidades, dores, motivações e expectativas dos usuários em relação ao website.
     `,
+     description2: `Com base nos insights obtidos, avançamos para a fase de ideação, onde realizamos sessões de brainstorming focadas em soluções que priorizassem acessibilidade, clareza visual e um fluxo de navegação mais intuitivo. Desenvolvemos a Jornada do Usuário para mapear pontos de contato e identificar oportunidades de melhoria, além da criação de wireframes de baixa e média fidelidade para estruturar a arquitetura da informação e validar fluxos antes do refinamento visual.
+
+Na etapa de prototipação, foram definidos o style guide, componentes e padrões visuais, garantindo consistência, acessibilidade e alinhamento com a identidade da RoboCin. As interfaces foram prototipadas de forma interativa no Figma, permitindo testes e ajustes contínuos ao longo do processo.
+
+Por fim, realizamos a documentação técnica, reunindo especificações de componentes, estilos, espaçamentos e comportamentos das interfaces, facilitando a comunicação com o time de desenvolvimento e assegurando a correta implementação do projeto.
+
+O resultado foi um website mais acessível, claro e funcional, com uma experiência de navegação otimizada e centrada no usuário, atendendo tanto às necessidades da RoboCin quanto às expectativas de seus clientes.`,
         images: [
             "/RoboCin/Time Babi.jpg"
         ]
@@ -144,10 +151,20 @@ const ProjectDetails = () => {
 
                 {/* Galeria Extra (se houver) */}
                 {project.images && project.images.map((img, idx) => (
-                    <div key={idx} style={{ width: '100%', marginTop: '4rem', borderRadius: '4px', overflow: 'hidden' }}>
+                    <div key={idx} style={{ width: '100%', maxWidth: '800px', margin: '4rem auto 0', marginTop: '4rem', marginBottom: '4rem', borderRadius: '4px', overflow: 'hidden' }}>
                         <img src={img} alt="Detail" style={{ width: '100%', height: 'auto', display: 'block' }} />
+
                     </div>
                 ))}
+
+
+                {/* Conteúdo Textual 2 */}
+                <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.2rem', lineHeight: '1.8', color: '#ddd' }}>
+                    {project.description2.split('\n').map((paragraph, idx) => (
+                        <p key={idx} style={{ marginBottom: '2rem' }}>{paragraph}</p>
+                    ))}
+                </div>
+
 
             </article>
 
