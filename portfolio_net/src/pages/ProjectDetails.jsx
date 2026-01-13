@@ -76,24 +76,30 @@ O resultado foi um website mais acessível, claro e funcional, com uma experiên
         "/RoboCin/Equipe.png"
         ]       
     },
-    
 
+    
     {
         id: 4,
-        title: "Travel App",
-        category: "Mobile Design",
-        client: "Wanderlust Inc.",
-        year: "2022",
+        title: "OP-7 Protótipo",
+        category: "Figma Project",
+        client: "Pessoal",
+        year: "2025",
         role: "UI Designer",
-        image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+        image: "/GIF - TEENAGE ENGINEERING/OP TP7 (1).png",
         description: `
-      Viajar é sobre descoberta. O aplicativo Wanderlust foi desenhado para ser o companheiro perfeito nessa jornada. O foco foi criar uma interface que inspirasse a exploração, utilizando fotografia em tela cheia e micro-interações que tornam a navegação fluida e orgânica.
-      
-      A tipografia sans-serif moderna garante legibilidade em movimento, enquanto o sistema de cores vibrante, porém controlado, ajuda a categorizar diferentes tipos de destinos sem sobrecarregar o usuário. Protótipos de alta fidelidade foram essenciais para testar gestos de navegação e garantir que a usabilidade em uma mão só fosse impecável.
+       Nesse projeto desenvolvi um protótipo digital do instrumento musical OP-7 da empresa Teenage Engineering. todo o projeto foi feito através do Figma, a partir da criação de componentes, assets e botões.
     `,
+        description2: `O objetivo do projeto foi criar uma representação fiel do OP-7, permitindo aos usuários interagir com o protótipo e explorar suas funcionalidades de forma intuitiva. O design foi cuidadosamente elaborado para refletir a estética única da Teenage Engineering, incorporando elementos visuais e interativos que capturam a essência do instrumento original.`,
         images: [
-            "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-        ]
+            "/GIF - TEENAGE ENGINEERING/OP TP7 (1).png"
+        ],
+        images2: [
+        ],
+        images3: [
+        ],
+        resultados: [
+        "/GIF - TEENAGE ENGINEERING/GIF - Teenage engineering.gif",
+        ]       
     }
 ];
 
@@ -199,9 +205,9 @@ const ProjectDetails = () => {
                 </h2>
 
 
-                {/* Galeria Resultados (3 imagens lado a lado) */}
+                 {/* Galeria Resultados */}
                 {project.resultados && project.resultados.length > 0 && (
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', maxWidth: '1200px', margin: '0 auto', marginBottom: '4rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: project.id === 4 ? '1fr' : 'repeat(3, 1fr)', gap: '2rem', maxWidth: project.id === 4 ? '100%' : '1200px', margin: '0 auto', marginBottom: '4rem' }}>
                         {project.resultados.map((img, idx) => (
                             <div key={idx} style={{ borderRadius: '4px', overflow: 'hidden' }}>
                                 <img src={img} alt="Resultado" style={{ width: '100%', height: 'auto', display: 'block' }} />
