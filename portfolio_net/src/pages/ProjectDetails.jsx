@@ -65,8 +65,21 @@ Por fim, realizamos a documentação técnica, reunindo especificações de comp
 O resultado foi um website mais acessível, claro e funcional, com uma experiência de navegação otimizada e centrada no usuário, atendendo tanto às necessidades da RoboCin quanto às expectativas de seus clientes.`,
         images: [
             "/RoboCin/Time Babi.jpg"
-        ]
+        ],
+        images2: [
+            "/RoboCin/Início.png"
+        ],
+        images3: [
+            "/RoboCin/Seletiva (1).png"
+        ],
+        resultados: [
+        "/RoboCin/Publicações.png",
+        "/RoboCin/Seletiva.png",
+        "/RoboCin/Equipe.png"
+        ]       
     },
+    
+
     {
         id: 4,
         title: "Travel App",
@@ -165,6 +178,39 @@ const ProjectDetails = () => {
                     ))}
                 </div>
 
+
+                 {/* Galeria Extra 2 (se houver) */}
+                {project.images2 && project.images2.map((img, idx) => (
+                    <div key={idx} style={{ width: '100%', maxWidth: '800px', margin: '4rem auto 0', borderRadius: '4px', overflow: 'hidden' }}>
+                        <img src={img} alt="Detail" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    </div>
+                ))}
+
+
+                {/* Galeria Extra 3 (se houver) */}
+                {project.images3 && project.images3.map((img, idx) => (
+                    <div key={idx} style={{ width: '100%', maxWidth: '800px', margin: '4rem auto 0', borderRadius: '4px', overflow: 'hidden' }}>
+                        <img src={img} alt="Detail" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    </div>
+                ))}
+
+
+                {/* Resultados Finais */}
+                <h2 style={{ maxWidth: '800px', margin: '6rem auto 0', fontSize: '2rem', fontWeight: 'bold', marginBottom: '3rem' }}>
+                    Resultados Finais
+                </h2>
+
+
+                {/* Galeria Resultados (3 imagens lado a lado) */}
+                {project.resultados && project.resultados.length > 0 && (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', maxWidth: '1200px', margin: '0 auto', marginBottom: '4rem' }}>
+                        {project.resultados.map((img, idx) => (
+                            <div key={idx} style={{ borderRadius: '4px', overflow: 'hidden' }}>
+                                <img src={img} alt="Resultado" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                            </div>
+                        ))}
+                    </div>
+                )}
 
             </article>
 
