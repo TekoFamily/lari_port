@@ -43,12 +43,12 @@ const projects = [
     },
     {
         id: 3,
-        title: "Financial Dashboard",
+        title: "Website RoboCin",
         category: "UI/UX",
-        client: "FinTech Corp",
+        client: "RoboCin",
         year: "2023",
         role: "Product Designer",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+        image: "/RoboCin/Mockup - RoboCin.jpg",
         description: `
       Simplificar dados complexos é uma das tarefas mais gratificantes do design de produto. Para este painel financeiro, o objetivo era tornar a visualização de investimentos e gastos algo intuitivo e até prazeroso para usuários leigos.
       

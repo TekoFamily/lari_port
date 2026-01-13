@@ -5,27 +5,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const works = [
     {
         id: 1,
-        title: "Minimalist E-commerce",
-        category: "Web Design",
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+        title: "Planno",
+        category: "App Design",
+        image: "/Planno/PLANNO - MOCKUP.jpg"
     },
     {
         id: 2,
-        title: "Architecture Portfolio",
-        category: "Development",
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+        title: "Espaço Cria",
+        category: "System Design",
+        image: "/ESPACO CRIA/MOCKUP - ESPAÇO CRIA.jpg"
     },
     {
         id: 3,
-        title: "Financial Dashboard",
+        title: "Website RoboCin",
         category: "UI/UX",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+        image: "/RoboCin/Mockup - RoboCin.jpg"
     },
     {
         id: 4,
-        title: "Travel App",
-        category: "Mobile Design",
-        image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+        title: "OP-7 Prototype",
+        category: "Personal Project",
+        image: "/GIF - TEENAGE ENGINEERING/OP TP7 (1).png"
     }
 ];
 
