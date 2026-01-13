@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <h1 className="hero-headline">
-          Eu transformo ideias <br />
+          Transformando ideias <br />
           em experiências digitais <br />
           memoráveis.
         </h1>

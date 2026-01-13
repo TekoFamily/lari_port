@@ -5,24 +5,22 @@ import Footer from '../components/Footer';
 import { ArrowLeft } from 'lucide-react';
 
 const projects = [
-    {
-        id: 1,
-        title: "Minimalist E-commerce",
-        category: "Web Design",
-        client: "Nordic Furniture Co.",
-        year: "2023",
+    {id: 1,
+        title: "Planno",
+        category: "App Design",
+        client: "Autoral",
+        year: "2024",
         role: "Lead Designer & Developer",
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-        description: `
-      Neste projeto, o desafio foi criar uma experiência de compra online que refletisse a simplicidade e a elegância do mobiliário escandinavo. A marca precisava de uma plataforma que não apenas vendesse produtos, mas contasse uma história de design e funcionalidade.
-      
-      Minha abordagem focou na redução de ruído visual. Eliminei elementos desnecessários, priorizando imagens de alta qualidade e tipografia legível com amplo espaço em branco. O fluxo de checkout foi simplificado para 3 passos, resultando em um aumento de 25% na conversão comparado à versão anterior.
-
-      Utilizei uma paleta monocromática com toques de madeira natural para evocar a materialidade dos produtos. A interface é totalmente responsiva, garantindo que a beleza do design se mantenha intacta, seja em um desktop de 27 polegadas ou em um smartphone.
-    `,
+        image: "/Planno/PLANNO - MOCKUP.jpg",
         images: [
-            "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-        ]
+            "/Planno/PLANNO - MOCKUP.jpg"],
+        description: `O Planno é um aplicativo de gestão financeira pessoal desenvolvido para apoiar usuários no controle de gastos, definição de metas e acompanhamento do comportamento financeiro. O projeto tem como objetivo transformar dados financeiros em informações claras e acionáveis, facilitando a tomada de decisão.`,
+        description2: `A solução foi estruturada a partir de princípios de UX, priorizando arquitetura da informação clara, fluxos intuitivos e redução de carga cognitiva. O aplicativo permite o registro e categorização de despesas, visualização de entradas e saídas, acompanhamento de metas financeiras e análise do uso do dinheiro ao longo do tempo.
+
+O design das interfaces foi orientado por usabilidade, clareza visual e consistência, garantindo uma experiência acessível e eficiente. O Planno demonstra a aplicação do design como ferramenta estratégica para produtos financeiros, alinhando necessidades do usuário e objetivos do produto.`,
+        images2: ["/Planno/iPhone 16 - Cadastro.png"],
+        images3: ["/Planno/iPhone 16 - Dashboard.png"],
+        resultados: ["/Planno/PLANNO - MOCKUP.jpg"]
     },
     {
         id: 2,
@@ -32,14 +30,14 @@ const projects = [
         year: "2024",
         role: "Frontend Developer",
         image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-        description: `
-      Para o renomado escritório Studio Arch, desenvolvi um portfólio digital que funciona como uma galeria imersiva. O objetivo não era apenas mostrar fotos de edifícios, mas transmitir a atmosfera e a escala de cada projeto arquitetônico.
-      
-      A solução técnica envolveu o uso de React.js com animações de transição suaves via Framer Motion. As imagens carregam progressivamente para garantir performance sem sacrificar a qualidade visual. Implementei um sistema de grid assimétrico que quebra a monotonia tradicional de portfólios web, permitindo que cada projeto tenha uma apresentação única baseada na orientação (vertical ou horizontal) das fotografias.
-    `,
+        description: `...existing description...`,
         images: [
             "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-        ]
+        ],
+        description2: "",
+        images2: [],
+        images3: [],
+        resultados: []
     },
     {
         id: 3,
