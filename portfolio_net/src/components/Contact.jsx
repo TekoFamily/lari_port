@@ -12,9 +12,9 @@ const Contact = () => {
                     </p>
 
                     <div className="contact-links">
-                        <a href="mailto:contact@larissa.com" style={{ textDecoration: 'underline' }}>Email</a>
-                        <a href="#" style={{ textDecoration: 'underline' }}>LinkedIn</a>
-                        <a href="#" style={{ textDecoration: 'underline' }}>Instagram</a>
+                        <a href="mailto:larissabcs.designer@gmail.com" style={{ textDecoration: 'underline' }}>Email</a>
+                        <a href="https://www.linkedin.com/in/larissa-bezerra-b58b1a247" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>LinkedIn</a>
+                        <a href="https://instagram.com/larixbezerra" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Instagram</a>
                     </div>
                 </div>
             </div>
