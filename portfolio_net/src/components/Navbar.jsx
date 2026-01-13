@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
-    return (
-        <header className="header">
-            <div className="header-container">
-                <a href="#" className="logo">
-                    LARISSA
-                </a>
+export default function Navbar(props) {
+  const [logoText, setLogoText] = useState('larissa');
 
-                <nav className="nav-menu">
-                    <a href="#about" className="nav-link">About</a>
-                    <a href="#works" className="nav-link">Works</a>
-                    <a href="#contact" className="nav-link">Contact</a>
-                </nav>
-            </div>
-        </header>
-    );
+  useEffect(() => {
+    const names = ['larissa', 'lari'];
+    let i = 0;
+    const id = setInterval(() => {
+      i = 1 - i;
+      setLogoText(names[i]);
+    }, 500);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <header className="header">
+      <div className="header-container">
+        <a href="#" className="logo">
+          {logoText}
+        </a>
+
+        <nav className="nav-menu">
+          <a href="#about" className="nav-link">About</a>
+          <a href="#works" className="nav-link">Works</a>
+          <a href="#contact" className="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+  );
 };
-
-export default Navbar;
