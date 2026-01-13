@@ -24,19 +24,19 @@ O design das interfaces foi orientado por usabilidade, clareza visual e consist�
     },
     {
         id: 2,
-        title: "Architecture Portfolio",
-        category: "Development",
-        client: "Studio Arch",
+        title: "Espaço Cria",
+        category: "System Design",
+        client: "Espaço Ciência",
         year: "2024",
-        role: "Frontend Developer",
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-        description: `...existing description...`,
+        role: "UX/UI Designer",
+        image: "/ESPACO CRIA/MOCKUP - ESPAÇO CRIA.jpg",
+        description: `O Espaço Cria é um projeto de design de sistemas que visa criar uma plataforma digital para a comunidade científica, proporcionando um ambiente colaborativo e acessível para o compartilhamento de ideias, projetos e descobertas. O sistema foi desenvolvido com foco em usabilidade, acessibilidade e integração entre diferentes áreas do conhecimento.`,
         images: [
-            "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+            "/ESPACO CRIA/MOCKUP - ESPAÇO CRIA.jpg"
         ],
-        description2: "",
-        images2: [],
-        images3: [],
+        description2: "O sistema foi projetado através de reuniões com stakeholders, pesquisa de usuários e análise de concorrentes. A arquitetura da informação foi cuidadosamente estruturada para facilitar a navegação e o acesso rápido às funcionalidades principais. O design visual foi desenvolvido para refletir a identidade do Espaço Ciência, utilizando uma paleta de cores vibrante e tipografia moderna.",
+        images2: ["/ESPACO CRIA/Dashboard_Espacotech_primeiroparte.png"],
+        images3: ["/ESPACO CRIA/Dashboard_Espacotech_gráfico.png"],
         resultados: []
     },
     {
