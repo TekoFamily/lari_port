@@ -50,12 +50,14 @@ const projects = [
         role: "Product Designer",
         image: "/RoboCin/Mockup - RoboCin.jpg",
         description: `
-      Simplificar dados complexos é uma das tarefas mais gratificantes do design de produto. Para este painel financeiro, o objetivo era tornar a visualização de investimentos e gastos algo intuitivo e até prazeroso para usuários leigos.
-      
-      Através de extensa pesquisa com usuários, identifiquei que a "fadiga de dados" era o principal problema. Para resolver isso, criei um sistema de hierarquia visual clara, onde apenas as informações críticas são mostradas inicialmente, com detalhes disponíveis sob demanda (progressive disclosure). O modo escuro foi cuidadosamente calibrado para reduzir o cansaço visual durante o uso prolongado.
+      O projeto de redesign do website da RoboCin surgiu a partir da necessidade de resolver problemas claros identificados durante as primeiras entrevistas e sessões de briefing com o cliente. Foi constatado que os usuários enfrentavam dificuldades relacionadas à falta de acessibilidade, baixa clareza das informações e um fluxo de navegação pouco eficiente, o que impactava diretamente a experiência e a compreensão dos serviços oferecidos.
+
+O projeto foi desenvolvido de forma colaborativa por uma equipe de quatro designers, utilizando o Figma como principal ferramenta. Atuei em todas as etapas do processo, desde a pesquisa até a documentação final.
+
+Na fase de imersão e pesquisa, buscamos compreender profundamente o contexto da empresa, seus objetivos e o comportamento dos usuários. Foram aplicadas análises como a Matriz SWOT, que ajudou a identificar forças, fraquezas, oportunidades e ameaças do produto digital, além da criação de personas representativas do público-alvo. Também utilizamos o Mapa da Empatia para entender necessidades, dores, motivações e expectativas dos usuários em relação ao website.
     `,
         images: [
-            "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+            "/RoboCin/Time Babi.jpg"
         ]
     },
     {
