@@ -11,7 +11,7 @@ const Hero = () => {
         </h1>
 
         <p className="hero-sub">
-          Designer & Desenvolvedora focada em clareza, propósito e estética minimalista.
+          Designer & Front-end criando experiências claras, com propósito.
         </p>
       </div>
     </section>

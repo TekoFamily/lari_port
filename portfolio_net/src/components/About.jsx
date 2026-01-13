@@ -24,15 +24,12 @@ const About = () => {
 
                     {/* Coluna de Texto */}
                     <div className="about-text">
-                        <h2>Sobre mim</h2>
+                        <h2 style={{ fontWeight: 'bold' }}>Sobre mim</h2>
                         <p>
-                            Sou uma designer apaixonada por simplificar o complexo. Com 5 anos de experiência,
-                            acredito que o design honesto é aquele que serve ao usuário sem gritar por atenção.
+                            Sou Larissa, designer formada pela UFPE, com foco em UX/UI e no desenvolvimento de produtos digitais centrados no usuário. Tenho interesse por arte, música e cultura, referências que atravessam meu processo criativo e influenciam a forma como penso, analiso e projeto.
                         </p>
                         <p>
-                            Minha abordagem combina pensamento estratégico com uma estética refinada,
-                            buscando sempre o equilíbrio entre funcionalidade e beleza. Quando não estou
-                            no computador, estou buscando inspiração na arquitetura e na natureza.
+                          Sou uma pensadora criativa, guiada por pesquisa, estratégia e curiosidade. Gosto de entender contextos, questionar soluções prontas e transformar problemas complexos em experiências claras, acessíveis e funcionais. Acredito no design como ferramenta de impacto real, capaz de conectar pessoas, produtos e objetivos de negócio.
                         </p>
                     </div>
                 </div>
